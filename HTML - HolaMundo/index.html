@@ -1,124 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Mi primera web</title>
-
-        <style>
-            table, th, td {
-                border: 1px solid black;
-            }
-        </style>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     </head>
-
     <body>
-        <h1>Mi primer heading</h1>
-        <h2>Mi segundo heading</h2>
-        <h3>Mi tercer heading</h3>
-        <h4>Mi cuarto heading</h4>
-        <h5>Mi quinto heading</h5>
-        <h6>Chanchito feliz</h6>
+        <header id="titulo">
+            <h1>Blog de Yamil Rafart</h1>
+        </header>
+        <section class="container">
+            <article class="post">
+                <h2>Título de mi post</h2>
+                
+                <p>Descripción de mi post.</p>
 
-        <p>Chanchito feliz está muy feliz.</p>
-        <p>Chanchito triste está muy triste.</p>
+                <img src="./img/coffee.png" width="400" alt="">
 
-        <hr>
+                <p>Texto del artículo que hay acá y es texto de prueba. Chanchito feliz!</p>
+            </article>
 
-        <h2>Chanchito Felipe</h2>
-        <p>
-            Este texto es <span style="color: blue;">más largo</span> y es para mostrar <br>
-            la etiqueta span!
-        </p>
+            <article class="post">
+                <h2>Título de mi post 2</h2>
+                
+                <p>Descripción de mi post 2.</p>
 
-        <!-- este texto es un comentario y no va a aparecer en el explorador -->
+                <img src="./img/monster.png" width="400" alt="">
 
-        <a target="_blank" href="https://www.google.com.ar">Ir a Google</a>
+                <p>Texto del artículo que hay acá y es texto de prueba. Chanchito feliz!</p>
+            </article>
 
-        <img src="./img/coffee.png" alt="" width="400">
+            <article class="post">
+                <h2>Título de mi post 3</h2>
+                
+                <p>Descripción de mi post 3.</p>
 
-        <hr>
+                <img src="./img/guitarra.png" width="400" alt="">
 
-        <form action="/formulario" method="POST">
-            <label for="nombre">Nombre</label>
-            <input value="Chanchito" type="text" name="nombre" id="nombre" placeholder="Chanchito feliz...">
-
-            <br>
-
-            <label for="apellido">Apellido</label>
-            <input value="Feliz" type="text" name="apellido" id="apellido" placeholder="Chanchito triste...">
-
-            <br>
-            
-            <label for="comentario">Comentario</label>
-            <textarea cols="50" rows="10" name="comentario" id="comentario" placeholder="Ingrese comentario...">Este es un valor por defecto</textarea>
-
-            <br>
-
-            <input type="submit">
-
-            <br>
-            <button type="button">Un botón</button>
-            <button type="reset">Reset</button>
-            <button type="submit">Enviar</button>
-        </form>
-
-        <hr>
-
-        <!-- UL es lista NO ordenada -->
-        <ul>
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-            <li>Elemento 4</li>
-        </ul>
-
-        <!-- OL es lista ordenada -->
-        <ol>
-            <li value="50">Elemento 1</li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-            <li>Elemento 4</li>
-            <li>
-                <ol>
-                    <li style="list-style-type: lower-roman;">Sub-Elemento 1</li>
-                    <li style="list-style-type: lower-roman;">Sub-Elemento 2</li>
-                    <li style="list-style-type: lower-roman;">Sub-Elemento 3</li>
-                    <li style="list-style-type: lower-roman;">Sub-Elemento 4</li>
-                </ol>
-            </li>
-        </ol>
-
-        <hr>
-
-        <table style="width: 500px;">
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hola beats</td>
-                    <td>Gratis</td>
-                </tr>
-                <tr>
-                    <td>Chanchito feliz</td>
-                    <td>19,90$</td>
-                </tr>
-                <tr>
-                    <td>Chanchito feliz muy feliz</td>
-                    <td>29,90$</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td></td>
-                <td>Total: 49,80$</td>
-            </tfoot>
-        </table>
+                <p>Texto del artículo que hay acá y es texto de prueba. Chanchito feliz!</p>
+            </article>
+        </section>
+        <footer>
+            <section>
+                <a href="#titulo">Ir al comienzo</a>
+                <a href="mailto:yamil@rafart.com">Contáctame aquí</a>
+            </section>
+            <p>Copyrigth 2026</p>
+        </footer>
     </body>
-
 </html>
